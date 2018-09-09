@@ -1,0 +1,38 @@
+out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>AMORTIZAÇÃO-COMPOSTA</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<a href='Home'>Voltar<br/></a>");
+            out.println("<form> "
+                    + "RESTA PAGAR: <br/><input type='Text' name='c'/><br/> "
+                    + "TAXA DE JUROS(%): <br/><input type='Text' name='i'/><br/> "
+                    + "PRAZO DO EMPRESTIMO(meses): <br/><input type='Text' name='n'/><br/> 
+                    + "TAXA MENSAL: <br><input type="text" name="tM"><br/>
+                    + "<input type='submit' value='CALCULAR'/></form");
+            
+            double c = Integer.parseInt(request.getParameter("c"));
+            double tj = Double.parseDouble(request.getParameter("i"));
+            double n = Double.parseDouble(request.getParameter("n"));
+            double tM = Double.parseDouble(request.getParameter("tM"));
+            double JurosM = 0;
+            
+            
+            out.println("<h2><br/>RESULTADO</h2>");
+            out.println("<table border='1'>");
+            out.println("<tr><td>Mês</td><td>RESTA PAGAR</td><td>TAXA DE JUROSL</td><td>TAXA MESAL</td></tr>");
+                for(int x=1;x<=n;x++)
+                    {
+                        i/12=tM
+                        JurosM = tM*c;
+                        i=c*tM*n;
+                        c = c-JurosM;
+                        out.println("<tr><td>"+n+"</td><td>"+c+"</td><td>"+i+"</td><td>"+c+"</td><td>"+i+"</td><td>"+tM+"</td></tr>");
+                
+                    }
+            out.println("</table>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
