@@ -1,0 +1,14 @@
+out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Home</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Projeto 02</h1>");
+            out.println("<div>Este projeto foi feito por Peterson. <br/>Seu objetivo é calcular a AMORTIZAÇÃO COMPOSTA E AMERICANA"<br/>;
+            out.println("<a href="AMCOMP.html"><button>AMORTIZAÇÃO-COMPOSTA</button></a>")
+            out.println("<a href="AmortizaçãoAmericana.html"><button>AMORTIZAÇÃO-AMERICANA</button></a>")
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
